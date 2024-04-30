@@ -432,10 +432,13 @@
 				</div>
 			</section>
 		</div>
+
+		
 	</div>
 </template>
 
 <script setup>
+
 const categories = [
 	{
 		name: "Handcrafted Collection",
