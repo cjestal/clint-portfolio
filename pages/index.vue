@@ -337,14 +337,14 @@
 					<div class="mt-10 flex items-center gap-x-3 lg:mt-0 lg:flex-shrink-0">
 						<a
 							href="#"
-							class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							class="rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 							>Download CV</a
 						>
 						<a
 							target="_blank"
 							href="https://calendly.com/cjestal-czhy/quick-chat-with-clint-james"
-							class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-							>Book a call</a
+							class="text-sm font-semibold leading-6 text-gray-900"
+							>Set a Meeting <span aria-hidden="true">→</span></a
 						>
 					</div>
 				</div>
