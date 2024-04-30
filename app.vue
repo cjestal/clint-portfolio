@@ -104,7 +104,7 @@
 
 		<main class="-mt-32 pt-10">
 			<div class="mx-auto max-w-6xl px-4 pb-12 sm:px-6 lg:px-8">
-				<div class="rounded-lg bg-white px-5 py-12 shadow sm:px-6">
+				<div class="rounded-xl bg-white px-5 py-12 shadow-xl sm:px-6">
 					<NuxtPage />
 				</div>
 			</div>

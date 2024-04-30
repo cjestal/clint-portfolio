@@ -17,9 +17,16 @@
 					Coding is not just a profession for me, it's also a source of fun and
 					continuous discovery.
 				</p>
+				<p class="text-lg leading-8 text-gray-600">
+					If you have a project you'd like to work on, I'd be happy to help.
+					Let's connect!
+				</p>
 				<!-- socials -->
 				<div class="flex flex-wrap justify-start gap-2">
-					<button
+					<a
+						target="_blank"
+                        tooltip="Linkedin"
+						href="https://www.linkedin.com/in/clintjamesestal/"
 						class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
 					>
 						<svg
@@ -34,9 +41,12 @@
 								></path>
 							</g>
 						</svg>
-					</button>
+					</a>
 
-					<button
+					<a
+						target="_blank"
+						href="https://github.com/cjestal"
+						tooltip="GitHub"
 						class="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
 					>
 						<svg
@@ -57,12 +67,31 @@
 								/>
 							</g>
 						</svg>
-					</button>
+					</a>
+
+					<a
+						target="_blank"
+						href="https://steamcommunity.com/profiles/76561198292619055/"
+						tooltip="Steam"
+						class="bg-indigo-900 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+					>
+						<img
+							src="https://cdn.worldvectorlogo.com/logos/steam-1.svg"
+							style="filter: invert(100%) brightness(200%) contrast(111%)"
+							alt=""
+							class="w-5 h-5 fill-current"
+							srcset=""
+						/>
+					</a>
 				</div>
 			</div>
 			<!-- right -->
 			<div>
-				<img src="https://via.placeholder.com/750" alt="placeholder" />
+				<img
+					src="https://2.gravatar.com/avatar/ebf4e2c20ad64b82c61db8642b4ef580dc7c96809a9606f37e1186d1f2ffd9a9?size=750"
+					class="aspect-[4/5] flex-none rounded-2xl object-cover"
+					alt="placeholder"
+				/>
 			</div>
 		</div>
 		<!-- skills -->
@@ -237,7 +266,8 @@
 					<h2
 						class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
 					>
-						Interested in working with me?<br />Book a meeting or download my CV.
+						Interested in working with me?<br />Book a meeting or download my
+						CV.
 					</h2>
 					<div class="mt-10 flex items-center gap-x-3 lg:mt-0 lg:flex-shrink-0">
 						<a
@@ -246,7 +276,7 @@
 							>Download CV</a
 						>
 						<a
-                            target="_blank"
+							target="_blank"
 							href="https://calendly.com/cjestal-czhy/quick-chat-with-clint-james"
 							class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 							>Book a call</a
