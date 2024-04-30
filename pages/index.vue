@@ -25,7 +25,7 @@
 				<div class="flex flex-wrap justify-start gap-2">
 					<a
 						target="_blank"
-                        tooltip="Linkedin"
+						tooltip="Linkedin"
 						href="https://www.linkedin.com/in/clintjamesestal/"
 						class="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
 					>
@@ -97,7 +97,7 @@
 		<!-- skills -->
 		<div>
 			<h2
-				class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-3"
+				class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-6"
 			>
 				My <span class="text-red-800">Skill Set</span>
 			</h2>
@@ -157,7 +157,7 @@
 
 					<li class="text-gray-700 flex items-center py-2">
 						<img
-							src="https://cdn.jsdelivr.net/npm/nuxt-logo@0.1.0/nuxt-logo.png"
+							src="https://nuxt.com/assets/design-kit/icon-green.svg"
 							alt="Nuxt.js Logo"
 							class="inline-block w-8 h-8 mr-2"
 						/>Nuxt.js
@@ -218,37 +218,103 @@
 		<!-- projects -->
 		<div>
 			<h2
-				class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-3"
+				class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-6"
 			>
-				Recent <span class="text-red-800">Projects</span>
+				Featured <span class="text-red-800">Projects</span>
 			</h2>
+
+			<div class="flex flex-col gap-6">
+				<div class="relative overflow-hidden rounded-lg lg:h-60">
+					<div class="absolute inset-0">
+						<img
+							src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+							alt=""
+							class="h-full w-full object-cover object-center"
+						/>
+					</div>
+					<div aria-hidden="true" class="relative h-96 w-full lg:hidden" />
+					<div aria-hidden="true" class="relative h-32 w-full lg:hidden" />
+					<div
+						class="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg"
+					>
+						<div>
+							<h2 class="text-xl font-bold text-white">Project ABC</h2>
+							<p class="mt-1 text-sm text-gray-300">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptate, quis. Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptate, quis.
+							</p>
+						</div>
+						<a
+							href="#"
+							class="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
+							>View Project</a
+						>
+					</div>
+				</div>
+
+				<div class="relative overflow-hidden rounded-lg lg:h-60">
+					<div class="absolute inset-0">
+						<img
+							src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+							alt=""
+							class="h-full w-full object-cover object-center"
+						/>
+					</div>
+					<div aria-hidden="true" class="relative h-96 w-full lg:hidden" />
+					<div aria-hidden="true" class="relative h-32 w-full lg:hidden" />
+					<div
+						class="absolute inset-x-0 bottom-0 rounded-bl-lg rounded-br-lg bg-black bg-opacity-75 p-6 backdrop-blur backdrop-filter sm:flex sm:items-center sm:justify-between lg:inset-x-auto lg:inset-y-0 lg:w-96 lg:flex-col lg:items-start lg:rounded-br-none lg:rounded-tl-lg"
+					>
+						<div>
+							<h2 class="text-xl font-bold text-white">Project ABC</h2>
+							<p class="mt-1 text-sm text-gray-300">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Voluptate, quis. Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Voluptate, quis.
+							</p>
+						</div>
+						<a
+							href="#"
+							class="mt-6 flex flex-shrink-0 items-center justify-center rounded-md border border-white border-opacity-25 bg-white bg-opacity-0 px-4 py-3 text-base font-medium text-white hover:bg-opacity-10 sm:ml-8 sm:mt-0 lg:ml-0 lg:w-full"
+							>View Project</a
+						>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- interests -->
 		<div>
 			<h2
-				class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-3"
+				class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-6"
 			>
 				Project <span class="text-red-800">Interests</span>
 			</h2>
-			<div class="mx-auto max-w-7xl py-6 sm:px-2 lg:px-4">
-				<div
-					class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 px-4 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+			<div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
+				<a
+					v-for="category in categories"
+					:key="category.name"
+					:href="category.href"
+					class="group block"
 				>
-					<div v-for="perk in perks" :key="perk.name" class="sm:flex">
-						<div class="sm:flex-shrink-0">
-							<div class="flow-root">
-								<img class="h-24 w-28" :src="perk.imageSrc" alt="" />
-							</div>
-						</div>
-						<div class="mt-3 sm:ml-3 sm:mt-0">
-							<h3 class="text-sm font-medium text-gray-900">
-								{{ perk.name }}
-							</h3>
-							<p class="mt-2 text-sm text-gray-500">{{ perk.description }}</p>
-						</div>
+					<div
+						aria-hidden="true"
+						class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg lg:aspect-h-6 lg:aspect-w-5 group-hover:opacity-75"
+					>
+						<img
+							:src="category.imageSrc"
+							:alt="category.imageAlt"
+							class="h-full w-full object-cover object-center"
+						/>
 					</div>
-				</div>
+					<h3 class="mt-4 text-base font-semibold text-gray-900">
+						{{ category.name }}
+					</h3>
+					<p class="mt-2 text-sm text-gray-500">
+						{{ category.description }}
+					</p>
+				</a>
 			</div>
 		</div>
 
@@ -266,8 +332,7 @@
 					<h2
 						class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
 					>
-						Interested in working with me?<br />Book a meeting or download my
-						CV.
+						Wanna work with me?<br />Let's talk.
 					</h2>
 					<div class="mt-10 flex items-center gap-x-3 lg:mt-0 lg:flex-shrink-0">
 						<a
@@ -302,28 +367,29 @@
 						<div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
 							<img
 								class="h-12 self-start"
-								src="https://tailwindui.com/img/logos/tuple-logo-gray-900.svg"
+								src="https://assets-global.website-files.com/62d8aea05e23fd589c2846eb/64827e4f64ad36db11a438e7_1-%20Header.svg"
 								alt=""
 							/>
 							<figure class="mt-10 flex flex-auto flex-col justify-between">
 								<blockquote class="text-lg leading-8 text-gray-900">
 									<p>
-										“Amet amet eget scelerisque tellus sit neque faucibus non
-										eleifend. Integer eu praesent at a. Ornare arcu gravida
-										natoque erat et cursus tortor consequat at. Vulputate
-										gravida sociis enim nullam ultricies habitant malesuada
-										lorem ac. Tincidunt urna dui pellentesque sagittis.”
+										“We were able to rely on Clint to deliver excellent work but
+										also to proactively question ideas/technologies where he was
+										able to advise on more efficient approaches from his
+										experience. Thank you, Clint.”
 									</p>
 								</blockquote>
 								<figcaption class="mt-10 flex items-center gap-x-6">
 									<img
 										class="h-14 w-14 rounded-full bg-gray-50"
-										src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+										src="https://scontent.fyzd1-3.fna.fbcdn.net/v/t31.18172-8/1978436_10152309133422835_942945323_o.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=OpOhoF5zqMMQ7kNvgFvWRlc&_nc_ht=scontent.fyzd1-3.fna&oh=00_AfCqzyfefL_bChE_fRNAUGtM87faoZ_QsS1u4mmQEpISTg&oe=6657BF1C"
 										alt=""
 									/>
 									<div class="text-base">
-										<div class="font-semibold text-gray-900">Judith Black</div>
-										<div class="mt-1 text-gray-500">CEO of Tuple</div>
+										<div class="font-semibold text-gray-900">Ben Flux</div>
+										<div class="mt-1 text-gray-500">
+											Co-Founder & CEO @ InspireX
+										</div>
 									</div>
 								</figcaption>
 							</figure>
@@ -333,29 +399,31 @@
 						>
 							<img
 								class="h-12 self-start"
-								src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg"
+								src="https://www.rentdevelopers.ph/assets/images/content/logo-dark.png"
 								alt=""
 							/>
 							<figure class="mt-10 flex flex-auto flex-col justify-between">
 								<blockquote class="text-lg leading-8 text-gray-900">
 									<p>
-										“Excepteur veniam labore ullamco eiusmod. Pariatur consequat
-										proident duis dolore nulla veniam reprehenderit nisi officia
-										voluptate incididunt exercitation exercitation elit. Nostrud
-										veniam sint dolor nisi ullamco.”
+										“Clint has a keen eye for detail and a strong commitment to
+										following coding standards, which results in high-quality
+										software applications. He is well-versed in using modern
+										tools and technologies”
 									</p>
 								</blockquote>
 								<figcaption class="mt-10 flex items-center gap-x-6">
 									<img
 										class="h-14 w-14 rounded-full bg-gray-50"
-										src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+										src="https://i0.wp.com/www.renstanforth.com/wp-content/uploads/2023/01/DSC09988_for_the_web.jpg?resize=560%2C560&ssl=1"
 										alt=""
 									/>
 									<div class="text-base">
 										<div class="font-semibold text-gray-900">
-											Joseph Rodriguez
+											Renee Louise Stanforth
 										</div>
-										<div class="mt-1 text-gray-500">CEO of Reform</div>
+										<div class="mt-1 text-gray-500">
+											Manager @ Link365 Global Solutions
+										</div>
 									</div>
 								</figcaption>
 							</figure>
@@ -368,6 +436,38 @@
 </template>
 
 <script setup>
+const categories = [
+	{
+		name: "Handcrafted Collection",
+		href: "#",
+		imageSrc:
+			"https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg",
+		imageAlt:
+			"Brown leather key ring with brass metal loops and rivets on wood table.",
+		description:
+			"Keep your phone, keys, and wallet together, so you can lose everything at once.",
+	},
+	{
+		name: "Organized Desk Collection",
+		href: "#",
+		imageSrc:
+			"https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
+		imageAlt:
+			"Natural leather mouse pad on white desk next to porcelain mug and keyboard.",
+		description:
+			"The rest of the house will still be a mess, but your desk will look great.",
+	},
+	{
+		name: "Focus Collection",
+		href: "#",
+		imageSrc:
+			"https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
+		imageAlt:
+			"Person placing task list card into walnut card holder next to felt carrying case on leather desk pad.",
+		description:
+			"Be more productive than enterprise project managers with a single piece of paper.",
+	},
+];
 const perks = [
 	{
 		name: "Free delivery",
