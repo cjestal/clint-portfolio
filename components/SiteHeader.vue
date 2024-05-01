@@ -23,9 +23,9 @@
 										:key="item.name"
 										:href="item.href"
 										:class="[
-											$route.path === item.href
-												? 'bg-red-900 text-white'
-												: 'text-gray-300 hover:bg-red-800 hover:text-white',
+											$route.path === '/' && item.href === '/' ? 'bg-red-900 text-white' :
+											$route.path !== '/' && item.href === '/' ? 'text-gray-300 hover:bg-red-800 hover:text-white' :
+											$route.path.includes(item.href) ? 'bg-red-900 text-white' : 'text-gray-300 hover:bg-red-800 hover:text-white',
 											'rounded-md px-3 py-2 text-sm font-medium',
 										]"
 										:aria-current="item.current ? 'page' : undefined"
@@ -62,9 +62,9 @@
 						as="a"
 						:href="item.href"
 						:class="[
-							$route.path === item.href
-								? 'bg-red-900 text-white'
-								: 'text-gray-300 hover:bg-red-700 hover:text-white',
+							$route.path === '/' && item.href === '/' ? 'bg-red-900 text-white' :
+							$route.path !== '/' && item.href === '/' ? 'text-gray-300 hover:bg-red-700 hover:text-white' :
+							$route.path.includes(item.href) ? 'bg-red-900 text-white' : 'text-gray-300 hover:bg-red-700 hover:text-white',
 							'block rounded-md px-3 py-2 text-base font-medium',
 						]"
 						:aria-current="item.current ? 'page' : undefined"

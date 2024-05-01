@@ -69,7 +69,7 @@ const blogPosts = [
 	{
 		id: 1,
 		title: "How gaming at a young age led me to a career in web development",
-		href: "#",
+		href: "/blog/how-gaming-at-a-young-age",
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
@@ -85,7 +85,7 @@ const blogPosts = [
 	{
 		id: 2,
 		title: "My challenges when I was learning React and Redux",
-		href: "#",
+		href: "/blog/my-challenges-learning-react-redux",
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
@@ -101,7 +101,7 @@ const blogPosts = [
 	{
 		id: 3,
 		title: "How I use artificial intelligence to skip code bottlenecks (and have more breaks!)",
-		href: "#",
+		href: "/blog/artificial-intelligence-skip-bottlenecks",
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
@@ -117,7 +117,7 @@ const blogPosts = [
 	{
 		id: 4,
 		title: "10 features that makes TailwindCSS awesome!",
-		href: "#",
+		href: "/blog/10-features-that-makes-tailwindcss-awesome",
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
@@ -133,7 +133,7 @@ const blogPosts = [
 	{
 		id: 5,
 		title: "Exploring the New Features of Vue 3",
-		href: "#",
+		href: "/blog/exploring-new-vue-3-features",
 		description:
 			"Discover the exciting new features of Vue 3 that enhance your development experience. We'll dive into the Composition API, improved TypeScript support, and more.",
 		imageUrl:
@@ -149,7 +149,7 @@ const blogPosts = [
 	{
 		id: 6,
 		title: "Why JavaScript is Still the King of Web Development",
-		href: "#",
+		href: "/blog/why-javascript-is-king",
 		description:
 			"JavaScript continues to dominate the web development landscape. Learn why it remains the top choice for developers and the innovations that keep it at the forefront.",
 		imageUrl:

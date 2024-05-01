@@ -13,10 +13,6 @@ export default {
 			type: String,
 			default: "Main Title",
 		},
-		// highlight: {
-		// 	type: String,
-		// 	default: "Interests",
-		// },
 	},
 	computed: {
 		lastWord() {
