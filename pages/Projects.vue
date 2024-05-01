@@ -15,23 +15,27 @@
 	</div>
 	<section class="flex flex-col gap-6">
 		<ProjectBlock
-			projectName="😺 MerryHR"
-			:backgroundClass="'bg-yellow-100'"
+			id="merry-hr"
+			projectName="😺 Merry HR"
+			:backgroundClass="'bg-yellow-50'"
 			description="An HR suite that allows you to manage your employees, departments, and roles. It's built to cover all the bases a company might need."
 		/>
 		<ProjectBlock
-			projectName="♟️ QualityCheckMate"
-			:backgroundClass="'bg-red-200'"
+			id="quality-check-mate"
+			projectName="♟️ Quality Check Mate"
+			:backgroundClass="'bg-red-50'"
 			description="A quality control platform that allows you to manage your quality checks, inspections, and certifications. It's designed to simplify the process of managing quality checks and inspections."
 		/>
 		<ProjectBlock
-			projectName="🛥️ BoatBound"
-			:backgroundClass="'bg-blue-100'"
+			id="boat-bound"
+			projectName="🛥️ Boat Bound"
+			:backgroundClass="'bg-blue-50'"
 			description="A boat booking application the allows users to rent boats, yachts, and other watercraft from boat owners."
 		/>
 		<ProjectBlock
-			projectName="🛍️ NobleNiche"
-			:backgroundClass="'bg-purple-100'"
+			id="noble-niche"
+			projectName="🛍️ Noble Niche"
+			:backgroundClass="'bg-purple-50'"
 			description="An e-commerce site that focuses on luxury items. It's built to be a platform for users to browse, search, and purchase luxury items."
 		/>
 	</section>

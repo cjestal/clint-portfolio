@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<SectionHeader main="Project" highlight="Interests" />
+		<SectionHeader main="Project Interests" />
 		<div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
 			<div
 				v-for="category in categories"
@@ -13,7 +13,7 @@
 				>
 					<img
 						:src="category.imageSrc"
-						class="h-full w-full object-cover object-center"
+						class="h-96 w-full object-cover object-center"
 					/>
 				</div>
 				<h3 class="mt-4 text-base font-semibold text-gray-900">
@@ -33,7 +33,7 @@ const categories = [
 		name: "Dashboard Applications",
 		href: "#",
 		imageSrc:
-			"https://tailwindui.com/img/ecommerce-images/home-page-01-collection-01.jpg",
+			"https://images.unsplash.com/photo-1640340435016-1964cf4e723b?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		description:
 			"I specialize in creating intuitive dashboard applications for data visualization and management.",
 	},
@@ -41,15 +41,15 @@ const categories = [
 		name: "Portfolio Sites",
 		href: "#",
 		imageSrc:
-			"https://tailwindui.com/img/ecommerce-images/home-page-01-collection-02.jpg",
+			"https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		description:
-			"I craft visually appealing and highly functional portfolio sites for clients.",
+			"I craft visually appealing and highly functional portfolio sites that fit the client's style.",
 	},
 	{
-		name: "E-commerce Sites",
+		name: "E-commerce Platforms",
 		href: "#",
 		imageSrc:
-			"https://tailwindui.com/img/ecommerce-images/home-page-01-collection-03.jpg",
+			"https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		description:
 			"I love building e-commerce sites that make shopping a breeze.",
 	},

@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<SectionHeader main="Received" highlight="Recommendations" />
+		<SectionHeader main="Received Recommendations" />
 
 		<section class="bg-white py-6">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">

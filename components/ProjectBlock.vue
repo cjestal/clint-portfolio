@@ -1,118 +1,157 @@
 <template>
-	<div :class="`p-6 ${backgroundClass}`">
-		<div
-			class="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row"
+	<div :class="backgroundClass">
+		<section
+			aria-labelledby="features-heading"
+			class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-8"
 		>
-			<div class="w-full lg:max-w-lg lg:flex-auto">
-				<h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-					{{ projectName }}
-				</h2>
-				<p class="mt-6 text-xl leading-8 text-gray-600">
-					{{ description }}
-				</p>
-				<img
-					src="https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1344&h=1104&q=80"
-					alt=""
-					class="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem]"
-				/>
-			</div>
-			<div class="w-full lg:max-w-xl lg:flex-auto">
-				<h3 class="sr-only">Job openings</h3>
-				<ul class="-my-8 divide-y divide-gray-100">
-					<li v-for="opening in jobOpenings" :key="opening.id" class="py-8">
-						<dl class="relative flex flex-wrap gap-x-3">
-							<dt class="sr-only">Role</dt>
-							<dd
-								class="w-full flex-none text-lg font-semibold tracking-tight text-gray-900"
-							>
-								<a :href="opening.href">
-									{{ opening.role }}
-									<span class="absolute inset-0" aria-hidden="true" />
-								</a>
-							</dd>
-							<dt class="sr-only">Description</dt>
-							<dd
-								class="mt-2 w-full flex-none text-base leading-7 text-gray-600"
-							>
-								{{ opening.description }}
-							</dd>
-							<dt class="sr-only">Salary</dt>
-							<dd class="mt-4 text-base font-semibold leading-7 text-gray-900">
-								{{ opening.salary }}
-							</dd>
-							<dt class="sr-only">Location</dt>
-							<dd
-								class="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500"
-							>
-								<svg
-									viewBox="0 0 2 2"
-									class="h-0.5 w-0.5 flex-none fill-gray-300"
-									aria-hidden="true"
-								>
-									<circle cx="1" cy="1" r="1" />
-								</svg>
-								{{ opening.location }}
-							</dd>
-						</dl>
-					</li>
-				</ul>
-				<div class="mt-8 flex border-t border-gray-100 pt-8">
-					<a
-						href="#"
-						class="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-						>View all openings <span aria-hidden="true">&rarr;</span></a
-					>
+        <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
+				<div class="max-w-3xl">
+					<SectionHeader :main="projectName" />
+					<p class="mt-4 text-gray-500 text-md">
+						{{ description }}
+					</p>
 				</div>
+
+				<TabGroup as="div" class="mt-4">
+					<div class="-mx-4 flex overflow-x-auto sm:mx-0">
+						<div class="flex-auto border-b border-gray-200 px-4 sm:px-0">
+							<TabList class="-mb-px flex space-x-10">
+								<Tab
+									as="template"
+									v-for="tab in tabs"
+									:key="tab.name"
+									v-slot="{ selected }"
+								>
+									<button
+										class="outline-none"
+										:class="[
+											selected
+												? 'border-red-700 text-red-700'
+												: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
+											'whitespace-nowrap border-b-2 py-4 text-sm font-medium',
+										]"
+									>
+										{{ tab.name }}
+									</button>
+								</Tab>
+							</TabList>
+						</div>
+					</div>
+
+					<TabPanels as="template">
+						<TabPanel
+							v-for="tab in tabs"
+							:key="tab.name"
+							class="space-y-16 pt-10 lg:pt-16"
+						>
+							<div
+								v-for="feature in tab.features"
+								:key="feature.name"
+								class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8"
+							>
+								<div class="mt-6 lg:col-span-5 lg:mt-0">
+									<h3 class="text-lg font-medium text-gray-900">
+										{{ feature.name }}
+									</h3>
+									<p class="mt-2 text-md text-gray-500">
+										{{ feature.description }}
+									</p>
+								</div>
+								<div class="lg:col-span-7">
+									<div
+										class="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5"
+									>
+										<img
+											:src="feature.imageSrc"
+											:alt="feature.imageAlt"
+											class="object-cover object-center"
+										/>
+									</div>
+								</div>
+							</div>
+						</TabPanel>
+					</TabPanels>
+				</TabGroup>
 			</div>
-		</div>
+		</section>
 	</div>
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
+import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/vue";
 
 const props = defineProps({
-  projectName: {
-    type: String,
-    default: 'Project Name'
-  },
-  description: {
-    type: String,
-    default: 'Project Description'
-  },
-  backgroundClass: {
-    type: String,
-    default: 'bg-yellow-200'
-  }
+	projectName: {
+		type: String,
+		default: "Project Name",
+	},
+	description: {
+		type: String,
+		default: "Project Description",
+	},
+	backgroundClass: {
+		type: String,
+		default: "bg-yellow-200",
+	},
 });
 
-const jobOpenings = [
+const tabs = [
 	{
-		id: 1,
-		role: "Full-time designer",
-		href: "#",
-		description:
-			"Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.",
-		salary: "$75,000 USD",
-		location: "San Francisco, CA",
+		name: "Design",
+		features: [
+			{
+				name: "Adaptive and modular",
+				description:
+					"The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.",
+				imageSrc:
+					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+				imageAlt:
+					"Maple organizer base with slots, supporting white polycarbonate trays of various sizes.",
+			},
+		],
 	},
 	{
-		id: 2,
-		role: "Laravel developer",
-		href: "#",
-		description:
-			"Et veniam et officia dolorum rerum. Et voluptas consequatur magni sapiente amet voluptates dolorum. Ut porro aut eveniet.",
-		salary: "$125,000 USD",
-		location: "San Francisco, CA",
+		name: "Tech Stack",
+		features: [
+			{
+				name: "Natural wood options",
+				description:
+					"Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.",
+				imageSrc:
+					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg",
+				imageAlt:
+					"Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.",
+			},
+		],
 	},
 	{
-		id: 3,
-		role: "React Native developer",
-		href: "#",
-		description:
-			"Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.",
-		salary: "$105,000 USD",
-		location: "San Francisco, CA",
+		name: "Inspiration",
+		features: [
+			{
+				name: "Helpful around the home",
+				description:
+					"Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
+				imageSrc:
+					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg",
+				imageAlt:
+					"Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.",
+			},
+		],
+	},
+	{
+		name: "Demo & Source",
+		features: [
+			{
+				name: "Everything you'll need",
+				description:
+					"The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.",
+				imageSrc:
+					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg",
+				imageAlt:
+					"Walnut organizer system on black leather desk mat on top of white desk.",
+			},
+		],
 	},
 ];
 </script>

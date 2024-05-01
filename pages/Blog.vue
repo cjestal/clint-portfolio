@@ -73,7 +73,7 @@ const blogPosts = [
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
-			"https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+			"https://images.unsplash.com/photo-1652197881268-d625ad54402b?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		date: "Feb 12, 2020",
 		datetime: "2020-02-12",
 		author: {
@@ -89,7 +89,7 @@ const blogPosts = [
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
-			"https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+			"https://images.unsplash.com/photo-1579389083175-247ef703006f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		date: "Jun 25, 2021",
 		datetime: "2021-06-25",
 		author: {
@@ -100,12 +100,12 @@ const blogPosts = [
 	},
 	{
 		id: 3,
-		title: "How I use artificial intelligence to skip code bottlenecks (and other roadblocks)",
+		title: "How I use artificial intelligence to skip code bottlenecks (and have more breaks!)",
 		href: "#",
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
-			"https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+			"https://images.unsplash.com/photo-1533929702053-9986939ea193?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		date: "Sep 10, 2022",
 		datetime: "2022-09-10",
 		author: {
@@ -121,7 +121,7 @@ const blogPosts = [
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
 		imageUrl:
-			"https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+			"https://images.unsplash.com/photo-1608093829255-31b11b093a06?q=80&w=2312&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		date: "Jan 15, 2024",
 		datetime: "2024-01-15",
 		author: {
@@ -137,7 +137,7 @@ const blogPosts = [
 		description:
 			"Discover the exciting new features of Vue 3 that enhance your development experience. We'll dive into the Composition API, improved TypeScript support, and more.",
 		imageUrl:
-			"https://images.unsplash.com/photo-1581276879432-15e50529f34a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+			"https://wallpapercave.com/wp/wp7134545.jpg",
 		date: "Feb 20, 2024",
 		datetime: "2024-02-20",
 		author: {
@@ -153,7 +153,7 @@ const blogPosts = [
 		description:
 			"JavaScript continues to dominate the web development landscape. Learn why it remains the top choice for developers and the innovations that keep it at the forefront.",
 		imageUrl:
-			"https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaGootby1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1650&q=80",
+			"https://images.unsplash.com/photo-1557853197-aefb550b6fdc?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		date: "Mar 05, 2024",
 		datetime: "2024-03-05",
 		author: {
