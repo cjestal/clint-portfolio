@@ -30,7 +30,7 @@
 			id="boat-bound"
 			projectName="🛥️ Boat Bound"
 			:backgroundClass="'bg-blue-50'"
-			description="A boat booking application the allows users to rent boats, yachts, and other watercraft from boat owners."
+			description="A boat sharing application that allows users to rent boats, yachts, and other watercraft from boat owners."
 		/>
 		<CtaSection />
 		<ProjectBlock

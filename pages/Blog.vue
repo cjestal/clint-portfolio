@@ -18,7 +18,7 @@
 			<article
 				v-for="post in blogPosts"
 				:key="post.id"
-				class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
+				class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80 hover:opacity-75"
 			>
 				<img
 					:src="post.imageUrl"
