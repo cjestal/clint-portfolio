@@ -6,11 +6,11 @@
 			Personal <span class="text-red-800">Projects</span>
 		</h1>
 		<p class="text-lg leading-8 text-gray-600 max-w-screen-3xl">
-			Welcome to my projects page. Each project listed here has been
-			crafted with great care and a lot of fun. I hope you enjoy exploring them
-			as much as I enjoyed creating them. Each project includes a demo link and
-			a link to the GitHub repository where you can explore the code and see how
-			the project was built.
+			Welcome to my projects page. Each project listed here has been crafted
+			with great care and a lot of fun. I hope you enjoy exploring them as much
+			as I enjoyed creating them. Each project includes a demo link and a link
+			to the GitHub repository where you can explore the code and see how the
+			project was built.
 		</p>
 	</div>
 	<section class="flex flex-col gap-6">
@@ -32,11 +32,18 @@
 			:backgroundClass="'bg-blue-50'"
 			description="A boat booking application the allows users to rent boats, yachts, and other watercraft from boat owners."
 		/>
+		<CtaSection />
 		<ProjectBlock
 			id="noble-niche"
 			projectName="🛍️ Noble Niche"
 			:backgroundClass="'bg-purple-50'"
 			description="An e-commerce site that focuses on luxury items. It's built to be a platform for users to browse, search, and purchase luxury items."
+		/>
+		<ProjectBlock
+			id="talk-tango"
+			projectName="🎤 Talk Tango"
+			:backgroundClass="'bg-orange-50'"
+			description="My personal take on a dating app. Users can find their perfect match through the power of voice! Dive into meaningful conversations, spark chemistry, and find your match in a symphony of shared interests and vibrant personalities. "
 		/>
 	</section>
 </template>
