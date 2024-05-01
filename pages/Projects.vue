@@ -17,22 +17,22 @@
 		<ProjectBlock
 			projectName="😺 MerryHR"
 			:backgroundClass="'bg-yellow-100'"
-			description="Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id."
+			description="An HR suite that allows you to manage your employees, departments, and roles. It's built to cover all the bases a company might need."
 		/>
 		<ProjectBlock
 			projectName="♟️ QualityCheckMate"
 			:backgroundClass="'bg-red-200'"
-			description="Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id."
+			description="A quality control platform that allows you to manage your quality checks, inspections, and certifications. It's designed to simplify the process of managing quality checks and inspections."
 		/>
 		<ProjectBlock
 			projectName="🛥️ BoatBound"
 			:backgroundClass="'bg-blue-100'"
-			description="Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id."
+			description="A boat booking application the allows users to rent boats, yachts, and other watercraft from boat owners."
 		/>
 		<ProjectBlock
 			projectName="🛍️ NobleNiche"
 			:backgroundClass="'bg-purple-100'"
-			description="Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus sit eu in id."
+			description="An e-commerce site that focuses on luxury items. It's built to be a platform for users to browse, search, and purchase luxury items."
 		/>
 	</section>
 </template>
