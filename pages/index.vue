@@ -1,7 +1,7 @@
 <template>
 	<div class="flex flex-col gap-16">
-		<AboutMe />
-		<SkillSet />
+		<AboutMeSection />
+		<SkillSetSection />
 		<ProjectsSection />
 		<InterestsSection />
 		<CtaSection />

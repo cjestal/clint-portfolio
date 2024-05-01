@@ -43,7 +43,10 @@ export default {
 				{ name: 'WordPress', logo: 'https://s.w.org/style/images/about/WordPress-logotype-wmark.png' },
 				{ name: 'NestJS', logo: 'https://nestjs.com/img/logo-small.svg' },
 				{ name: 'ExpressJS', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png' },
-				{ name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' }
+				{ name: 'Node.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg' },
+				{ name: 'Firebase', logo: 'https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png' },
+				{ name: 'AWS', logo: 'https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png' },
+				{ name: 'Shopify', logo: 'https://cdn.shopify.com/assets/images/logos/shopify-bag.png' }
 			]
 		};
 	}
