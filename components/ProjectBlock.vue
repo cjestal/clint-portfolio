@@ -4,7 +4,7 @@
 			aria-labelledby="features-heading"
 			class="mx-auto max-w-7xl py-10 sm:px-2 lg:px-8"
 		>
-        <div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
+			<div class="mx-auto max-w-2xl px-4 lg:max-w-none lg:px-0">
 				<div class="max-w-3xl">
 					<SectionHeader :main="projectName" />
 					<p class="mt-4 text-gray-500 text-md">
@@ -49,25 +49,30 @@
 								:key="feature.name"
 								class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8"
 							>
-								<div class="mt-6 lg:col-span-5 lg:mt-0">
-									<h3 class="text-lg font-medium text-gray-900">
-										{{ feature.name }}
-									</h3>
-									<p class="mt-2 text-md text-gray-500">
-										{{ feature.description }}
-									</p>
-								</div>
-								<div class="lg:col-span-7">
-									<div
-										class="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5"
-									>
-										<img
-											:src="feature.imageSrc"
-											:alt="feature.imageAlt"
-											class="object-cover object-center"
-										/>
-									</div>
-								</div>
+								<ProjectTabContent
+									v-if="tab.name === 'Design'"
+									:header="designHeader"
+									description="Lorem ipsum dolor sit amet"
+									:imgSrc="designImgSrc"
+								/>
+								<ProjectTabContent
+									v-if="tab.name === 'Tech Stack'"
+									:header="techHeader"
+									description="Lorem ipsum dolor sit amet"
+									:imgSrc="techImgSrc"
+								/>
+								<ProjectTabContent
+									v-if="tab.name === 'Inspiration'"
+									:header="inspirationHeader"
+									description="Lorem ipsum dolor sit amet"
+									:imgSrc="inspirationImgSrc"
+								/>
+								<ProjectTabContent
+									v-if="tab.name === 'Demo & Source'"
+									:header="demoHeader"
+									description="Lorem ipsum dolor sit amet"
+									:imgSrc="demoImgSrc"
+								/>
 							</div>
 						</TabPanel>
 					</TabPanels>
@@ -94,6 +99,42 @@ const props = defineProps({
 		type: String,
 		default: "bg-yellow-200",
 	},
+	designHeader: {
+		type: String,
+		default: "Project Name",
+	},
+	designImgSrc: {
+		type: String,
+		default:
+			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+	},
+	techImgSrc: {
+		type: String,
+		default:
+			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+	},
+	techHeader: {
+		type: String,
+		default: "Project Name",
+	},
+	inspirationImgSrc: {
+		type: String,
+		default:
+			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+	},
+	inspirationHeader: {
+		type: String,
+		default: "Project Name",
+	},
+	demoImgSrc: {
+		type: String,
+		default:
+			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+	},
+	demoHeader: {
+		type: String,
+		default: "Project Name",
+	},
 });
 
 const tabs = [
@@ -101,13 +142,11 @@ const tabs = [
 		name: "Design",
 		features: [
 			{
-				name: "Adaptive and modular",
+				name: "Streamlined HR Approach",
 				description:
-					"The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.",
+					"I am currently working on this project. Stay tuned for updates!",
 				imageSrc:
 					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
-				imageAlt:
-					"Maple organizer base with slots, supporting white polycarbonate trays of various sizes.",
 			},
 		],
 	},
@@ -120,8 +159,6 @@ const tabs = [
 					"Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.",
 				imageSrc:
 					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg",
-				imageAlt:
-					"Walnut organizer base with pen, sticky note, phone, and bin trays, next to modular drink coaster attachment.",
 			},
 		],
 	},
@@ -134,8 +171,6 @@ const tabs = [
 					"Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
 				imageSrc:
 					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg",
-				imageAlt:
-					"Walnut organizer base with white polycarbonate trays in the kitchen with various kitchen utensils.",
 			},
 		],
 	},
@@ -143,13 +178,11 @@ const tabs = [
 		name: "Demo & Source",
 		features: [
 			{
-				name: "Everything you'll need",
+				name: "Work in Progress",
 				description:
-					"The Organize base set includes the pen, phone, small, and large trays to help you group all your essential items. Expand your set with the drink coaster and headphone stand add-ons.",
+					"I am currently working on this project. Stay tuned for updates! Demo and source code coming soon.",
 				imageSrc:
 					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-04.jpg",
-				imageAlt:
-					"Walnut organizer system on black leather desk mat on top of white desk.",
 			},
 		],
 	},
