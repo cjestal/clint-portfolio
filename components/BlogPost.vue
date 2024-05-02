@@ -4,7 +4,7 @@
 			<div class="mx-auto max-w-2xl lg:mx-0">
 				<a
 					href="/blog"
-					class="text-base font-semibold leading-6 text-red-900 pt-1"
+					class="text-base font-semibold leading-6 text-red-900 pt-1 hover:text-red-700"
 					><span aria-hidden="true">←</span> Go back</a
 				>
 				<h2

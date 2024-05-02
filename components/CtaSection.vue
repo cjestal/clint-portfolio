@@ -16,7 +16,7 @@
 					<a
 						target="_blank"
 						href="https://calendly.com/cjestal-czhy/quick-chat-with-clint-james"
-						class="text-sm font-semibold leading-6 text-gray-900"
+						class="text-sm font-semibold leading-6 text-gray-900 hover:text-red-700"
 						>Set a Meeting <span aria-hidden="true">→</span></a
 					>
 				</div>

@@ -4,7 +4,7 @@
 			<SectionHeader main="Featured Projects" />
 			<a
 				href="/projects"
-				class="text-sm font-semibold leading-6 text-red-900 pt-1"
+				class="text-sm font-semibold leading-6 text-red-900 pt-1 hover:text-red-700"
 				>View all <span aria-hidden="true">→</span></a
 			>
 		</div>

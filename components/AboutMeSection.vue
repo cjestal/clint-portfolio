@@ -22,7 +22,7 @@
 				<a
 					target="_blank"
 					href="https://calendly.com/cjestal-czhy/quick-chat-with-clint-james"
-					class="text-red-800"
+					class="text-red-800 hover:text-red-700"
 					>Let's connect!</a
 				>
 			</p>

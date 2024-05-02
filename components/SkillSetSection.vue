@@ -1,15 +1,12 @@
 <template>
 	<div>
-		<h2
-			class="text-2xl font-bold leading-tight tracking-tight text-gray-900 mb-6"
-		>
-			My <span class="text-red-800">Skill Set</span>
-		</h2>
+		
+		<SectionHeader main="Skill Set" />
 		<section class="py-6 bg-orange-50">
 			<ul
 				class="pl-5 space-y-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-lg"
 			>
-				<li v-for="skill in skills" :key="skill.name" class="text-gray-700 cursor-default flex items-center py-2 hover:font-bold">
+				<li v-for="skill in skills" :key="skill.name" class="text-gray-700 cursor-default flex items-center py-2 hover:font-bold hover:text-red-700">
 					<img
 						:src="skill.logo"
 						:alt="`${skill.name} Logo`"
