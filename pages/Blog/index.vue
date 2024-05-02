@@ -84,7 +84,7 @@ const blogPosts = [
 	},
 	{
 		id: 2,
-		title: "My challenges when I was learning React and Redux",
+		title: "My challenges while learning React and Redux",
 		href: "/blog/my-challenges-learning-react-redux",
 		description:
 			"Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",

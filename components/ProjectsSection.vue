@@ -10,10 +10,10 @@
 		</div>
 
 		<div class="flex flex-col gap-6">
-			<div class="relative overflow-hidden rounded-lg lg:h-60">
+			<div class="relative overflow-hidden rounded-lg lg:h-72">
 				<div class="absolute inset-0">
 					<img
-						src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+						src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt=""
 						class="h-full w-full object-cover object-center"
 					/>
@@ -38,12 +38,12 @@
 				</div>
 			</div>
 
-			<div class="relative overflow-hidden rounded-lg lg:h-60">
+			<div class="relative overflow-hidden rounded-lg lg:h-72">
 				<div class="absolute inset-0">
 					<img
-						src="https://tailwindui.com/img/ecommerce-images/category-page-01-featured-collection.jpg"
+						src="https://images.unsplash.com/photo-1575468130718-697b2fa904dc?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 						alt=""
-						class="h-full w-full object-cover object-center"
+						class="h-full w-full object-cover object-right"
 					/>
 				</div>
 				<div aria-hidden="true" class="relative h-96 w-full lg:hidden" />

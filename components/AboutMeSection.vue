@@ -5,7 +5,8 @@
 			<h1
 				class="text-3xl font-bold leading-tight tracking-tight text-gray-900 mb-3"
 			>
-				Hi there, I'm <span class="text-red-800">Clint James </span><span class="wave">👋</span>
+				Hi there, I'm <span class="text-red-800">Clint James </span
+				><span class="wave">👋</span>
 			</h1>
 
 			<p class="text-lg leading-8 text-gray-600 max-w-screen-3xl">
@@ -16,8 +17,14 @@
 				continuous discovery for 11 years.
 			</p>
 			<p class="text-lg leading-8 text-gray-600">
-				If you have a project you'd like to work on, I'd be happy to help. Let's
-				connect!
+				If you have a project you'd like to work on, I'd be happy to help.
+
+				<a
+					target="_blank"
+					href="https://calendly.com/cjestal-czhy/quick-chat-with-clint-james"
+					class="text-red-800"
+					>Let's connect!</a
+				>
 			</p>
 			<!-- socials -->
 			<div class="flex flex-wrap justify-start gap-2">

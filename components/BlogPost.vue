@@ -13,6 +13,8 @@
 					{{ others }} <span class="text-red-800">{{ lastWord }}</span>
 				</h2>
 
+                <h3 class="my-4 text-gray-600 text-base italic">Posted on {{ datePosted }} by {{ author }}</h3>
+
 				<div class="mt-6 text-lg leading-8 text-gray-600">
 					<slot></slot>
 				</div>

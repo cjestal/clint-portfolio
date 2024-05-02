@@ -2,7 +2,7 @@
 	<BlogPost
 		title="How Gaming at a Young Age Led Me to a Career in Web Development"
 		author="Clint James"
-		datePosted="2024-03-01"
+		datePosted="June 25, 2021"
 	>
 		<p class="mb-6">
 			From the pixelated landscapes of Diablo 2 to the immersive worlds of Dark
