@@ -51,27 +51,15 @@
 							>
 								<ProjectTabContent
 									v-if="tab.name === 'Design'"
-									:header="designHeader"
-									description="Lorem ipsum dolor sit amet"
-									:imgSrc="designImgSrc"
+									:content="designContent"
 								/>
 								<ProjectTabContent
 									v-if="tab.name === 'Tech Stack'"
-									:header="techHeader"
-									description="Lorem ipsum dolor sit amet"
-									:imgSrc="techImgSrc"
-								/>
-								<ProjectTabContent
-									v-if="tab.name === 'Inspiration'"
-									:header="inspirationHeader"
-									description="Lorem ipsum dolor sit amet"
-									:imgSrc="inspirationImgSrc"
+									:content="techContent"
 								/>
 								<ProjectTabContent
 									v-if="tab.name === 'Demo & Source'"
-									:header="demoHeader"
-									description="Lorem ipsum dolor sit amet"
-									:imgSrc="demoImgSrc"
+									:content="demoContent"
 								/>
 							</div>
 						</TabPanel>
@@ -99,41 +87,35 @@ const props = defineProps({
 		type: String,
 		default: "bg-yellow-200",
 	},
-	designHeader: {
-		type: String,
-		default: "Project Name",
+	designContent: {
+		header: String,
+		description: String,
+		imgSrc: String,
+		default: () => ({
+			header: "Project Name",
+			description: "Lorem ipsum dolor sit amet",
+			imgSrc: "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+		}),
 	},
-	designImgSrc: {
-		type: String,
-		default:
-			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+	techContent: {
+		header: String,
+		description: String,
+		imgSrc: String,
+		default: () => ({
+			header: "Project Name",
+			description: "Lorem ipsum dolor sit amet",
+			imgSrc: "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+		}),
 	},
-	techImgSrc: {
-		type: String,
-		default:
-			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
-	},
-	techHeader: {
-		type: String,
-		default: "Project Name",
-	},
-	inspirationImgSrc: {
-		type: String,
-		default:
-			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
-	},
-	inspirationHeader: {
-		type: String,
-		default: "Project Name",
-	},
-	demoImgSrc: {
-		type: String,
-		default:
-			"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
-	},
-	demoHeader: {
-		type: String,
-		default: "Project Name",
+	demoContent: {
+		header: String,
+		description: String,
+		imgSrc: String,
+		default: () => ({
+			header: "Project Name",
+			description: "Lorem ipsum dolor sit amet",
+			imgSrc: "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+		}),
 	},
 });
 
@@ -159,18 +141,6 @@ const tabs = [
 					"Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.",
 				imageSrc:
 					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-02.jpg",
-			},
-		],
-	},
-	{
-		name: "Inspiration",
-		features: [
-			{
-				name: "Helpful around the home",
-				description:
-					"Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can't wait to see how you'll use it!",
-				imageSrc:
-					"https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-03.jpg",
 			},
 		],
 	},
